@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hyperloop</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <main class="auth">
+      <div class="auth__illustration"></div>
+      <div class="auth__content">
+        <%= yield %>
+      </div>
+    </main>
+
+    <%= turbo_frame_tag :flashes do %>
+      <%= render "shared/flashes" %>
+    <% end %>
+  </body>
+</html>

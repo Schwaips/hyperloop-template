@@ -1,0 +1,5 @@
+# https://github.com/varvet/pundit?tab=readme-ov-file#creating-custom-error-messages
+
+en:
+  pundit:
+    default: "You cannot perform this action."

@@ -1,0 +1,39 @@
+<h2 class="title cl-neutral-950">Change your password</h2>
+
+<%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f| %>
+  <%= f.input :reset_password_token, as: :hidden %>
+
+  <%= f.input :password,
+                as: :password,
+                wrapper: :password,
+                required: true,
+                input_html: {
+                  autocomplete: "current-password"
+                },
+                wrapper_html: {
+                  class: "form__wrapper--default",
+                  data: {
+                    controller: "form--password--password-component",
+                    "form--password--password-component_svg_eye_value": svg_tag('eye'),
+                    "form--password--password-component_svg_eye_slash_value": svg_tag('eye-slash')
+                  }
+                } %>
+  <%= f.input :password_confirmation,
+                as: :password,
+                wrapper: :password,
+                required: true,
+                input_html: {
+                  autocomplete: "current-password"
+                },
+                wrapper_html: {
+                  class: "form__wrapper--default",
+                  data: {
+                    controller: "form--password--password-component",
+                    "form--password--password-component_svg_eye_value": svg_tag('eye'),
+                    "form--password--password-component_svg_eye_slash_value": svg_tag('eye-slash')
+                  }
+                } %>
+  <%= f.button :button %>
+<% end %>
+
+<%= render "auth/shared/links" %>

@@ -1,0 +1,11 @@
+<% helpers.simple_form_for :form do |f| %>
+  <%= f.input :checkboxes,
+              as: :check_boxes,
+              wrapper: :check_boxes,
+              collection: ['Option 1', 'Option 2', 'Option 3'],
+              label: @label,
+              required: @required,
+              hint: @hint,
+              error: @error,
+              disabled: @disabled %>
+<% end %>

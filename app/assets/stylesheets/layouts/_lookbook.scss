@@ -1,0 +1,10 @@
+#lookbook {
+
+  padding-inline: 4rem;
+  padding-block: 2rem;
+  margin: auto;
+
+  &:has(& > * + *) {
+    margin: 0;
+  }
+}

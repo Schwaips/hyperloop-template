@@ -1,0 +1,16 @@
+.auth {
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  min-height: 100vh;
+
+  &__illustration {
+    background-color: var(--neutral-950);
+  }
+
+  &__content {
+    padding: 3rem;
+    margin: auto;
+    max-width: 40rem;
+    width: 100%;
+  }
+}

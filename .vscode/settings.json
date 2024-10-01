@@ -1,0 +1,57 @@
+{
+  // * ERB Formatter settings
+  "[erb]": {
+    "editor.defaultFormatter": "aliariff.vscode-erb-beautify",
+    "editor.formatOnSave": true
+  },
+  "files.associations": {
+    "*.html.erb": "erb"
+  },
+  "emmet.includeLanguages": {
+    "erb": "html"
+  },
+  "vscode-erb-beautify.bundlerPath": "bundle", // Path to the bundler
+  "vscode-erb-beautify.indentBy": 0, // Indent by 0 with tab
+  "vscode-erb-beautify.keepBlankLines": 1, // Accept 1 blank line
+  "vscode-erb-beautify.stopOnErrors": false, // Continue formatting even if there are errors
+  "vscode-erb-beautify.tab": false, // Indent with spaces
+  "vscode-erb-beautify.tabStops": 2, // Indent with 2 spaces
+  "vscode-erb-beautify.useBundler": true, // Use bundler to run the formatter
+
+  // * Rails i18n settings
+  "railsI18n.debugLevel": 0,
+  "railsI18n.languageIdentifiers": ["ruby", "erb"],
+  "railsI18n.loadAllTranslations": true,
+  "railsI18n.pathToRails": "rails",
+
+  // * Ruby LSP settings
+  "[ruby]": {
+    "editor.defaultFormatter": "Shopify.ruby-lsp", // Use the Ruby LSP as the default formatter
+    "editor.formatOnSave": true, // Format files automatically when saving
+    "editor.tabSize": 2, // Use 2 spaces for indentation
+    "editor.insertSpaces": true, // Use spaces and not tabs for indentantion
+    "editor.semanticHighlighting.enabled": true, // Enable semantic highlighting
+    "editor.formatOnType": false // Disable formatting while typing
+  },
+  "rubyLsp.formatter": "rubocop",
+  "rubyLsp.enableExperimentalFeatures": false,
+  "rubyLsp.enabledFeatures": {
+    "codeActions": true,
+    "diagnostics": true,
+    "documentHighlights": true,
+    "documentLink": true,
+    "documentSymbols": false,
+    "foldingRanges": true,
+    "formatting": true,
+    "hover": true,
+    "inlayHint": true,
+    "onTypeFormatting": false,
+    "selectionRanges": false,
+    "semanticHighlighting": true,
+    "completion": true,
+    "codeLens": false,
+    "definition": true,
+    "workspaceSymbol": false,
+    "signatureHelp": true
+  }
+}
