@@ -1,0 +1,11 @@
+<% helpers.simple_form_for :form do |f| %>
+  <%= f.input :radio_buttons,
+              as: :radio_buttons,
+              wrapper: :radio_buttons,
+              collection: ['Option 1', 'Option 2', 'Option 3'],
+              label: @label,
+              required: @required,
+              hint: @hint,
+              error: @error,
+              disabled: @disabled %>
+<% end %>

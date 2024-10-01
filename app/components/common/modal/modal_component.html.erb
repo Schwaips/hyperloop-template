@@ -1,0 +1,10 @@
+<div class="modal__backdrop"
+      tabindex="-1"
+      data-controller="common--modal--modal-component"
+      data-action="turbo:frame-load->common--modal--modal-component#open turbo:submit-end->common--modal--modal-component#closeOnFormSubmit keydown.esc@window->common--modal--modal-component#close click@window->common--modal--modal-component#closeOnTouch">
+  <div class="modal" data-common--modal--modal-component-target="modal" <%= "open" if @open %>>
+    <div class="modal__content">
+      <turbo-frame id="modal" data-common--modal--modal-component-target="frame" />
+    </div>
+  </div>
+</div>

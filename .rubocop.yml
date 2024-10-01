@@ -1,0 +1,21 @@
+require:
+  - rubocop-rails
+  - rubocop-performance
+  - rubocop-rspec
+  - rubocop-rspec_rails
+  - rubocop-factory_bot
+  - rubocop-capybara
+AllCops:
+  NewCops: enable
+  Exclude:
+    - "db/schema.rb"
+    - "db/seeds.rb"
+    - "bin/*"
+    - "config/**/*"
+    - "config.ru"
+    - "app/components/previews/**/*"
+
+Style/Documentation:
+  Enabled: false
+Style/EmptyMethod:
+  Enabled: false

@@ -1,0 +1,12 @@
+<h2 class="title cl-neutral-950">Forgot your password?</h2>
+
+<%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+  <%= f.input :email,
+              required: true,
+              autofocus: true,
+              input_html: { autocomplete: "email" } %>
+
+  <%= f.button :button %>
+<% end %>
+
+<%= render "auth/shared/links" %>

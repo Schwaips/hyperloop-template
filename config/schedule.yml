@@ -1,0 +1,4 @@
+example_cron_job:
+  cron: "*/5 * * * *"
+  class: "ExampleWorker"
+  queue: "cron"

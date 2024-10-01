@@ -1,0 +1,30 @@
+<h2 class="title cl-neutral-950">Log in</h2>
+
+<%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <%= f.input :email,
+              required: false,
+              autofocus: true,
+              input_html: { autocomplete: "email" } %>
+  <%= f.input :password,
+            as: :password,
+            wrapper: :password,
+            required: false,
+            input_html: {
+              autocomplete: "current-password"
+            },
+            wrapper_html: {
+              class: "form__wrapper--default",
+              data: {
+                controller: "form--password--password-component",
+                "form--password--password-component_svg_eye_value": svg_tag('eye'),
+                "form--password--password-component_svg_eye_slash_value": svg_tag('eye-slash')
+              }
+            } %>
+  <%= f.input :remember_me,
+              as: :boolean,
+              wrapper: :checkbox %>
+
+  <%= f.button :button %>
+<% end %>
+
+<%= render "auth/shared/links" %>

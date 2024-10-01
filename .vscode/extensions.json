@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "shanehofstetter.rails-i18n",
+    "aki77.rails-db-schema",
+    "rayhanw.erb-helpers",
+    "aliariff.vscode-erb-beautify",
+    "aaron-bond.better-comments",
+    "shopify.ruby-lsp"
+  ]
+}

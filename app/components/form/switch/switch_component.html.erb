@@ -1,0 +1,10 @@
+<% helpers.simple_form_for :form do |f| %>
+  <%= f.input :switch,
+              as: :boolean,
+              wrapper: :switch,
+              label: @label,
+              required: @required,
+              hint: @hint,
+              error: @error,
+              disabled: @disabled %>
+<% end %>
